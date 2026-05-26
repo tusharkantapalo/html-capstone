@@ -1,40 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Resume</title>
-    </head>
-    <body>
-        <h1>Tusharkanta Palo</h1>
-        <img src="./profile.jpeg" height="600" alt="profile phot">
-        <h2>Summary</h2>
-        <p>I am Tusharkanta Palo, a B.Tech CSE student at Silicon Institute of Technology, Bhubaneswar, passionate about using technology to solve real-world problems. I have a strong interest in logical problem-solving, software development, and emerging fields like AI, Data Science, and Software Engineering. Recently, I began learning Web Development to build interactive and user-focused digital experiences. Driven by curiosity and continuous learning, I aim to grow into a forward-thinking technologist capable of contributing to impactful and innovative projects.</p>
-        <hr />
-        <h2>Education</h2>
-        <ul>
-            <h3><li>High School:(2019-2022)</li></h3>
-            <p>Saraswati Sishu Vidya Mandir, Neelakantha Nagar, Berhampur, Ganjam, Odisha, India</p>
-            <h3><li>Intermediate:(2022-2024)</li></h3>
-            <p>Saraswati Vidya Mandir, Neelakantha Nagar, Berhampur, Ganjam, Odisha, India</p>
-            <h3><li>Graduation:(2025-2029)</li></h3>
-            <p>Bachelor of Technology, Silicon Institute of Technology, Bhubaneswar, Khordha, Odisha</p>
-            <hr />
-        </ul>
-        <hr />
-        <h2>Skills</h2>
-        <ul>
-            <li>Experienced in C.</li>
-            <li>Experienced in C++.</li>
-            <li>Experienced in HTML.</li>
-        </ul>
-        <hr />
-        <h2>Extra Info:</h2>
-        <ul>
-            <li><a href="./hobbies.html">Hobbies</a></li>
-            <li><a href="./contact.html">Contact Me</a></li>
-        </ul>
-        <footer>
-            <p>© Tusharkanta Palo. All rights reserved.</p>
-        </footer>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tusharkanta Palo | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <span>TP</span> Tusharkanta Palo
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <div class="hero-left">
+      <h3>Hello, I’m</h3>
+
+      <h1>Tusharkanta Palo</h1>
+
+      <h2>Computer Science Engineering Student</h2>
+
+      <p>
+        Passionate about solving real-world problems using technology
+        and building innovative solutions for a better tomorrow.
+      </p>
+
+      <!-- Buttons -->
+      <div class="social-buttons">
+
+        <a href="https://github.com/tusharkantapalo" target="_blank" class="btn-social">
+          GitHub
+        </a>
+
+        <a href="https://mail.google.com/mail/u/1/#inbox" class="btn-social">
+          Gmail
+        </a>
+
+        <a href="https://www.linkedin.com/in/tusharkanta-palo-70a258379/" target="_blank" class="btn-social">
+          LinkedIn
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Right Side Image -->
+    <div class="hero-right">
+
+      <div class="image-shape">
+        <img src="./profile.jpeg" alt="Tusharkanta Palo">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Cards Section -->
+  <section class="cards-container">
+
+    <!-- ABOUT SECTION -->
+<div class="card">
+    <h2>About Me</h2>
+
+    <p>
+        I am TUSHARKANTA PALO, a B.Tech student in Computer Science and Engineering (CSE) at Silicon Institute of Technology, Bhubaneswar, Odisha.
+    </p>
+
+    <div id="aboutMore" class="more-text">
+        <p>
+            I am passionate about technology, software development, and problem-solving, with interests in Artificial Intelligence, Data Science, and Software Engineering.
+        </p>
+
+        <p>
+            I have strong knowledge of C programming and DSA in C, along with HTML and CSS. Currently, I am learning Python through my summer internship to improve my development skills.
+        </p>
+    </div>
+
+    <button class="read-btn" onclick="toggleAbout()" id="aboutBtn">
+        Read More
+    </button>
+</div>
+
+
+    <!-- Skills -->
+    <div class="card">
+      <h2>Skills</h2>
+
+      <ul class="skills-list">
+        <li>C (Programming Language)</li>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>Data Structures and Algorithms (DSA) in C</li>
+      </ul>
+    </div>
+
+      <!-- EDUCATION SECTION -->
+<div class="card">
+    <h2>Education</h2>
+
+    <!-- Visible First -->
+    <div class="education-item">
+        <span>2025 - 2029</span>
+        <h3>B.Tech in Computer Science and Engineering</h3>
+        <p>Silicon Institute of Technology, Bhubaneswar, Odisha</p>
+    </div>
+
+    <!-- Hidden Initially -->
+    <div id="eduMore" class="more-text">
+
+        <div class="education-item">
+            <span>2023</span>
+            <h3>12th Standard</h3>
+            <p>Saraswati Vidya Mandir H.S. School, Berhampur, Odisha</p>
+            <p><strong>CHSE Board</strong> — 84%</p>
+        </div>
+
+        <div class="education-item">
+            <span>2021</span>
+            <h3>10th Standard</h3>
+            <p>Saraswati Sishu Vidya Mandir, Berhampur, Odisha</p>
+            <p><strong>BSE Board</strong> — 95%</p>
+        </div>
+
+    </div>
+
+    <button class="read-btn" onclick="toggleEducation()" id="eduBtn">
+        Read More
+    </button>
+</div>
+
+    <!-- Contact -->
+    <div class="card">
+      <h2>Connect With Me</h2>
+
+      <p>📞 +91 63711 03045</p>
+      <p>📩 tusharkantapalo@gmail.com</p>
+    </div>
+
+  </section>
+  <script>
+
+function toggleAbout(){
+
+    var moreText = document.getElementById("aboutMore");
+    var btn = document.getElementById("aboutBtn");
+
+    if(moreText.style.display === "block"){
+        moreText.style.display = "none";
+        btn.innerHTML = "Read More";
+    }
+    else{
+        moreText.style.display = "block";
+        btn.innerHTML = "Read Less";
+    }
+}
+
+
+function toggleEducation(){
+
+    var moreText = document.getElementById("eduMore");
+    var btn = document.getElementById("eduBtn");
+
+    if(moreText.style.display === "block"){
+        moreText.style.display = "none";
+        btn.innerHTML = "Read More";
+    }
+    else{
+        moreText.style.display = "block";
+        btn.innerHTML = "Read Less";
+    }
+}
+
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Tusharkanta Palo. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
