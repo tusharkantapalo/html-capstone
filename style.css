@@ -311,3 +311,29 @@ body{
     background:#5548ff;
     transform:scale(1.05);
 }
+
+.project-list{
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.project-list li{
+    color:#d4d4d4;
+    line-height:28px;
+    margin-bottom:18px;
+}
+
+.project-list strong{
+    color:#ffffff;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.contact .card{
+    width: 420px;
+    max-width: 90%;
+}

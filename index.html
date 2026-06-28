@@ -72,27 +72,27 @@
   <section class="cards-container">
 
     <!-- ABOUT SECTION -->
-<div class="card">
-    <h2>About Me</h2>
-
-    <p>
-        I am TUSHARKANTA PALO, a B.Tech student in Computer Science and Engineering (CSE) at Silicon Institute of Technology, Bhubaneswar, Odisha.
-    </p>
-
-    <div id="aboutMore" class="more-text">
-        <p>
-            I am passionate about technology, software development, and problem-solving, with interests in Artificial Intelligence, Data Science, and Software Engineering.
-        </p>
+    <div class="card">
+        <h2>About Me</h2>
 
         <p>
-            I have strong knowledge of C programming and DSA in C, along with HTML and CSS. Currently, I am learning Python through my summer internship to improve my development skills.
+            I am TUSHARKANTA PALO, a B.Tech student in Computer Science and Engineering (CSE) at Silicon Institute of Technology, Bhubaneswar, Odisha.
         </p>
+
+        <div id="aboutMore" class="more-text">
+            <p>
+                I am passionate about technology, software development, and problem-solving, with interests in Artificial Intelligence, Data Science, and Software Engineering.
+            </p>
+
+            <p>
+                I have a strong foundation in C, Python, and Data Structures & Algorithms (DSA), complemented by hands-on experience with HTML and CSS for building responsive web applications. I enjoy solving complex problems, developing practical software solutions, and continuously enhancing my expertise in software engineering, full-stack development, and emerging technologies.
+            </p>
+        </div>
+
+        <button class="read-btn" onclick="toggleAbout()" id="aboutBtn">
+            Read More
+        </button>
     </div>
-
-    <button class="read-btn" onclick="toggleAbout()" id="aboutBtn">
-        Read More
-    </button>
-</div>
 
 
     <!-- Skills -->
@@ -108,50 +108,77 @@
       </ul>
     </div>
 
-      <!-- EDUCATION SECTION -->
-<div class="card">
-    <h2>Education</h2>
-
-    <!-- Visible First -->
-    <div class="education-item">
-        <span>2025 - 2029</span>
-        <h3>B.Tech in Computer Science and Engineering</h3>
-        <p>Silicon Institute of Technology, Bhubaneswar, Odisha</p>
-    </div>
-
-    <!-- Hidden Initially -->
-    <div id="eduMore" class="more-text">
-
-        <div class="education-item">
-            <span>2023</span>
-            <h3>12th Standard</h3>
-            <p>Saraswati Vidya Mandir H.S. School, Berhampur, Odisha</p>
-            <p><strong>CHSE Board</strong> — 84%</p>
-        </div>
-
-        <div class="education-item">
-            <span>2021</span>
-            <h3>10th Standard</h3>
-            <p>Saraswati Sishu Vidya Mandir, Berhampur, Odisha</p>
-            <p><strong>BSE Board</strong> — 95%</p>
-        </div>
-
-    </div>
-
-    <button class="read-btn" onclick="toggleEducation()" id="eduBtn">
-        Read More
-    </button>
-</div>
-
-    <!-- Contact -->
+    <!-- PROJECT SECTION -->
     <div class="card">
-      <h2>Connect With Me</h2>
+        <h2>Projects</h2>
 
-      <p>📞 +91 63711 03045</p>
-      <p>📩 tusharkantapalo@gmail.com</p>
+        <!-- Visible Initially -->
+        <p>
+            I have developed my personal portfolio website, where I showcase my
+            projects, technical skills, and learning journey.
+        </p>
+
+        <!-- Hidden Initially -->
+        <div id="projectMore" class="more-text">
+            <p>
+                Additionally, I built a <strong>Subscription Billing Engine</strong>
+                in Python using the <strong>Test-Driven Development (TDD)</strong>
+                approach, demonstrating object-oriented design, clean code
+                practices, and comprehensive unit testing.
+            </p>
+        </div>
+
+        <button class="read-btn" onclick="toggleProject()" id="projectBtn">
+            Read More
+        </button>
+    </div>
+
+    <!-- EDUCATION SECTION -->
+    <div class="card">
+        <h2>Education</h2>
+
+        <!-- Visible First -->
+        <div class="education-item">
+            <span>2025 - 2029</span>
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <p>Silicon Institute of Technology, Bhubaneswar, Odisha</p>
+            <p>CGPA - <strong>9.73</strong>(33 / 878 rank)</p>
+        </div>
+
+        <!-- Hidden Initially -->
+        <div id="eduMore" class="more-text">
+
+            <div class="education-item">
+                <span>2023</span>
+                <h3>12th Standard</h3>
+                <p>Saraswati Vidya Mandir H.S. School, Berhampur, Odisha</p>
+                <p><strong>CHSE Board</strong> — 84%</p>
+            </div>
+
+            <div class="education-item">
+                <span>2021</span>
+                <h3>10th Standard</h3>
+                <p>Saraswati Sishu Vidya Mandir, Berhampur, Odisha</p>
+                <p><strong>BSE Board</strong> — 95%</p>
+            </div>
+
+        </div>
+
+        <button class="read-btn" onclick="toggleEducation()" id="eduBtn">
+            Read More
+        </button>
     </div>
 
   </section>
+  <!-- Contact Section -->
+    <div class="contact">
+        <div class="card">
+            <h2>Connect With Me</h2>
+
+            <p>📞 +91 63711 03045</p>
+            <p>📩 tusharkantapalo@gmail.com</p>
+        </div>
+    </div>
   <script>
 
 function toggleAbout(){
@@ -185,11 +212,26 @@ function toggleEducation(){
     }
 }
 
+function toggleProject(){
+
+    var moreText = document.getElementById("projectMore");
+    var btn = document.getElementById("projectBtn");
+
+    if(moreText.style.display === "block"){
+        moreText.style.display = "none";
+        btn.innerHTML = "Read More";
+    }
+    else{
+        moreText.style.display = "block";
+        btn.innerHTML = "Read Less";
+    }
+}
+
 </script>
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 Tusharkanta Palo. All rights reserved.</p>
+    <p>&copy; 2026 Tusharkanta Palo. All rights reserved.</p>
   </footer>
 
 </body>
